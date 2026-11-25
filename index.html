@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>김지원의 Profile 🌼</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFF9E9;
+    color: #55452E;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.8;
+}
+
+header {
+    background: #FFE58F;
+    text-align: center;
+    padding: 65px 20px;
+    border-radius: 0 0 45px 45px;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Jua', sans-serif;
+    font-size: 42px;
+    color: #815D20;
+    margin: 10px;
+}
+
+header p {
+    color: #856B3C;
+    font-size: 16px;
+}
+
+.character {
+    font-size: 65px;
+    margin-bottom: 10px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.container {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #FFFFFF;
+    padding: 27px;
+    margin-bottom: 22px;
+    border-radius: 25px;
+    border: 2px solid #F8E8B7;
+    box-shadow: 0 5px 15px #E9D9AC55;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-family: 'Jua', sans-serif;
+    font-size: 25px;
+    color: #C28B24;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background: #FFF0BB;
+    padding: 3px 8px;
+    border-radius: 8px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile .emoji {
+    font-size: 65px;
+}
+
+.profile h3 {
+    font-size: 24px;
+    color: #A97620;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tag {
+    background: #FFF1C6;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.interest {
+    background: #FFF9E9;
+    padding: 15px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.interest span {
+    display: block;
+    font-size: 35px;
+}
+
+.goal {
+    background: #FFEBAF;
+    text-align: center;
+    border: none;
+}
+
+.goal p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #A58B58;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header h1 { font-size: 32px; }
+    .grid { grid-template-columns: 1fr 1fr; }
+    .card { padding: 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="character">🌼🐰</div>
+    <h1>Welcome to Ji Won's World!</h1>
+    <p>반짝반짝 빛나는 간호학과 김지원의 이야기 💛</p>
+</header>
+
+<div class="container">
+
+    <!-- Profile -->
+    <section class="card profile">
+        <div class="emoji">👩🏻‍⚕️</div>
+        <h2>🌷 Profile</h2>
+        <h3>김지원 (Kim Ji Won)</h3>
+        <div class="info">
+            <span class="tag">🎂 2006.02.05</span>
+            <span class="tag">🏫 단국대학교</span>
+            <span class="tag">🩺 간호학과 2학년</span>
+        </div>
+        <p style="margin-top:18px;">
+            안녕하세요! 밝은 에너지와 긍정적인 마음을 가진
+            간호학과 학생 김지원입니다 💕
+        </p>
+    </section>
+
+    <!-- About Me -->
+    <section class="card">
+        <h2>💛 About Me</h2>
+        <p>
+            저는 <span class="highlight">밝고 긍정적인 성격</span>으로
+            사람들과 소통하는 것을 좋아합니다.
+            꼼꼼하고 세심한 성격으로 작은 부분도 놓치지 않으려고 노력하며,
+            새로운 경험을 통해 배우고 성장하는 것을 즐깁니다.
+        </p>
+        <div style="text-align:right; font-size:35px;">
+            🐻🌻
+        </div>
+    </section>
+
+    <!-- Interests -->
+    <section class="card">
+        <h2>🌈 Interests</h2>
+        <div class="grid">
+            <div class="interest">
+                <span>🏃🏻‍♀️</span>
+                운동
+            </div>
+            <div class="interest">
+                <span>🩺</span>
+                간호와 디지털 기술
+            </div>
+            <div class="interest">
+                <span>💬</span>
+                사람들과 소통하기
+            </div>
+            <div class="interest">
+                <span>🌱</span>
+                새로운 경험과 성장
+            </div>
+        </div>
+    </section>
+
+    <!-- Strengths -->
+    <section class="card">
+        <h2>⭐ Strengths</h2>
+        <div class="grid">
+            <div class="interest">
+                <span>⏰</span>
+                시간 관리 능력
+            </div>
+            <div class="interest">
+                <span>💪</span>
+                책임감
+            </div>
+            <div class="interest">
+                <span>💬</span>
+                원활한 의사소통
+            </div>
+            <div class="interest">
+                <span>🔍</span>
+                꼼꼼함과 세심함
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="card">
+        <h2>🎀 Hobbies</h2>
+        <div class="grid">
+            <div class="interest">
+                <span>🎧</span>
+                음악 감상
+            </div>
+            <div class="interest">
+                <span>✈️</span>
+                여행
+            </div>
+            <div class="interest">
+                <span>🎬</span>
+                영화 보기
+            </div>
+            <div class="interest">
+                <span>☕</span>
+                카페 & 디저트
+            </div>
+            <div class="interest">
+                <span>📸</span>
+                사진 찍기
+            </div>
+            <div class="interest">
+                <span>🍰</span>
+                맛있는 음식 즐기기
+            </div>
+        </div>
+    </section>
+
+    <!-- My Goal -->
+    <section class="card goal">
+        <div style="font-size:50px;">👩🏻‍⚕️💗🩺</div>
+        <h2>🌟 My Goal</h2>
+        <p>
+            디지털 기술을 능숙하게 활용하면서도<br>
+            환자의 마음을 진심으로 이해하고<br>
+            따뜻한 공감과 전문성을 갖춘<br>
+            <strong>신뢰받는 멋진 간호사</strong>가 되는 것이 저의 목표입니다!
+        </p>
+        <div style="font-size:30px; margin-top:15px;">
+            🌻 💛 🐰 💛 🌻
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    Made with Love 💛 | Ji Won's Profile 🌼<br>
+    오늘도 행복하고 반짝이는 하루 보내세요!
+</footer>
+
+</body>
+</html>
+
